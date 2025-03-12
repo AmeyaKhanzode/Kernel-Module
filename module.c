@@ -43,5 +43,5 @@ MODULE_LICENSE("GPL");
 MODULE_AUTHOR("Ameya Khanzode");
 MODULE_DESCRIPTION("Memory Map Kernel Module");
 
-module_init(myinit());
-module_exit(myexit());
+module_init(myinit);
+module_exit(myexit);
