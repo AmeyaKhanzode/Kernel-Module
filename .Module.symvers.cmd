@@ -1,0 +1,1 @@
+savedcmd_/home/ameyak/Desktop/os/kernel_module/project/Module.symvers :=  scripts/mod/modpost -M -m -a      -o /home/ameyak/Desktop/os/kernel_module/project/Module.symvers -T /home/ameyak/Desktop/os/kernel_module/project/modules.order -i Module.symvers -e 
