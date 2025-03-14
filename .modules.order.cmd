@@ -1,1 +1,1 @@
-savedcmd_/home/ameyak/Desktop/os/kernel_module/project/modules.order := {   echo /home/ameyak/Desktop/os/kernel_module/project/module.c; :; } > /home/ameyak/Desktop/os/kernel_module/project/modules.order
+savedcmd_/home/ameyak/Desktop/os/kernel_module/project/modules.order := {   echo /home/ameyak/Desktop/os/kernel_module/project/module.o; :; } > /home/ameyak/Desktop/os/kernel_module/project/modules.order
