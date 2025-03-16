@@ -1,0 +1,16 @@
+# Ignore build artifacts
+*.o
+*.ko
+*.mod.*
+*.symvers
+modules.order
+
+# Ignore temporary files
+*.tmp
+*.swp
+*.swo
+
+# Ignore test and user executable files (if compiled)
+test
+user
+
