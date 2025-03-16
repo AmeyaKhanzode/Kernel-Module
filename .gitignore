@@ -9,6 +9,8 @@ modules.order
 *.tmp
 *.swp
 *.swo
+*.cmd
+*.mod
 
 # Ignore test and user executable files (if compiled)
 test
