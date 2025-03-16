@@ -1,1 +1,0 @@
-savedcmd_/home/ameya/Kernel-Module/Module.symvers :=  scripts/mod/modpost -M -m -a      -o /home/ameya/Kernel-Module/Module.symvers -T /home/ameya/Kernel-Module/modules.order -i Module.symvers -e -i /home/ameya/Kernel-Module/Module.symvers
