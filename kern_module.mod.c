@@ -35,24 +35,23 @@ MODULE_INFO(retpoline, "Y");
 
 static const struct modversion_info ____versions[]
 __used __section("__versions") = {
-	{ 0x122c3a7e, "_printk" },
 	{ 0xd3eb51ff, "proc_create" },
+	{ 0x122c3a7e, "_printk" },
 	{ 0xf84d1d0d, "single_open" },
 	{ 0xb3daf1a5, "remove_proc_entry" },
 	{ 0xf88dc246, "init_task" },
+	{ 0x9ce185b9, "seq_printf" },
 	{ 0xdcb764ad, "memset" },
 	{ 0xa65c6def, "alt_cb_patch_nops" },
 	{ 0x385c7481, "__tracepoint_mmap_lock_start_locking" },
 	{ 0x668b19a1, "down_read" },
 	{ 0xcf2ea86b, "__tracepoint_mmap_lock_acquire_returned" },
-	{ 0x9ce185b9, "seq_printf" },
 	{ 0x524879e0, "mas_find" },
-	{ 0x5f9c8d15, "seq_puts" },
 	{ 0xd469bccc, "__tracepoint_mmap_lock_released" },
 	{ 0x53b954a2, "up_read" },
 	{ 0xa9ecc4ee, "mmput" },
-	{ 0x159e7d29, "__mmap_lock_do_trace_released" },
 	{ 0x44601e88, "__mmap_lock_do_trace_acquire_returned" },
+	{ 0x159e7d29, "__mmap_lock_do_trace_released" },
 	{ 0xaa3f0ae4, "__mmap_lock_do_trace_start_locking" },
 	{ 0xf0fdf6cb, "__stack_chk_fail" },
 	{ 0x5f8ee070, "seq_read" },
@@ -64,4 +63,4 @@ __used __section("__versions") = {
 MODULE_INFO(depends, "");
 
 
-MODULE_INFO(srcversion, "DCA1E7774E90918C5F54CF0");
+MODULE_INFO(srcversion, "47CA1698FDDF4DACBEA1B4D");
