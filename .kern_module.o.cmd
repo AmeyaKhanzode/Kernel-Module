@@ -1,11 +1,8 @@
-savedcmd_/home/ameya/Kernel-Module/module.mod.o :=  gcc-12 -Wp,-MMD,/home/ameya/Kernel-Module/.module.mod.o.d -nostdinc -I/usr/src/linux-headers-6.6.74+rpt-common-rpi/arch/arm64/include -I./arch/arm64/include/generated -I/usr/src/linux-headers-6.6.74+rpt-common-rpi/include -I./include -I/usr/src/linux-headers-6.6.74+rpt-common-rpi/arch/arm64/include/uapi -I./arch/arm64/include/generated/uapi -I/usr/src/linux-headers-6.6.74+rpt-common-rpi/include/uapi -I./include/generated/uapi -include /usr/src/linux-headers-6.6.74+rpt-common-rpi/include/linux/compiler-version.h -include /usr/src/linux-headers-6.6.74+rpt-common-rpi/include/linux/kconfig.h -include /usr/src/linux-headers-6.6.74+rpt-common-rpi/include/linux/compiler_types.h -D__KERNEL__ -mlittle-endian -DCC_USING_PATCHABLE_FUNCTION_ENTRY -DKASAN_SHADOW_SCALE_SHIFT= -fmacro-prefix-map=/usr/src/linux-headers-6.6.74+rpt-common-rpi/= -std=gnu11 -fshort-wchar -funsigned-char -fno-common -fno-PIE -fno-strict-aliasing -mgeneral-regs-only -DCONFIG_CC_HAS_K_CONSTRAINT=1 -Wno-psabi -mabi=lp64 -fno-asynchronous-unwind-tables -fno-unwind-tables -mbranch-protection=pac-ret -Wa,-march=armv8.5-a -DARM64_ASM_ARCH='"armv8.5-a"' -DKASAN_SHADOW_SCALE_SHIFT= -fno-delete-null-pointer-checks -O2 -fno-allow-store-data-races -fstack-protector-strong -fno-omit-frame-pointer -fno-optimize-sibling-calls -ftrivial-auto-var-init=zero -fno-stack-clash-protection -fpatchable-function-entry=4,2 -falign-functions=8 -fno-strict-overflow -fno-stack-check -fconserve-stack -Wall -Wundef -Werror=implicit-function-declaration -Werror=implicit-int -Werror=return-type -Werror=strict-prototypes -Wno-format-security -Wno-trigraphs -Wno-frame-address -Wno-address-of-packed-member -Wframe-larger-than=2048 -Wno-main -Wno-unused-but-set-variable -Wno-unused-const-variable -Wno-dangling-pointer -Wvla -Wno-pointer-sign -Wcast-function-type -Wno-array-bounds -Wno-alloc-size-larger-than -Wimplicit-fallthrough=5 -Werror=date-time -Werror=incompatible-pointer-types -Werror=designated-init -Wenum-conversion -Wno-unused-but-set-variable -Wno-unused-const-variable -Wno-restrict -Wno-packed-not-aligned -Wno-format-overflow -Wno-format-truncation -Wno-stringop-overflow -Wno-stringop-truncation -Wno-missing-field-initializers -Wno-type-limits -Wno-shift-negative-value -Wno-maybe-uninitialized -Wno-sign-compare -mstack-protector-guard=sysreg -mstack-protector-guard-reg=sp_el0 -mstack-protector-guard-offset=1432 -DMODULE -DKBUILD_BASENAME='"module.mod"' -DKBUILD_MODNAME='"module"' -D__KBUILD_MODNAME=kmod_module -c -o /home/ameya/Kernel-Module/module.mod.o /home/ameya/Kernel-Module/module.mod.c
+savedcmd_/home/ameya/Kernel-Module/kern_module.o :=  gcc-12 -Wp,-MMD,/home/ameya/Kernel-Module/.kern_module.o.d -nostdinc -I/usr/src/linux-headers-6.6.74+rpt-common-rpi/arch/arm64/include -I./arch/arm64/include/generated -I/usr/src/linux-headers-6.6.74+rpt-common-rpi/include -I./include -I/usr/src/linux-headers-6.6.74+rpt-common-rpi/arch/arm64/include/uapi -I./arch/arm64/include/generated/uapi -I/usr/src/linux-headers-6.6.74+rpt-common-rpi/include/uapi -I./include/generated/uapi -include /usr/src/linux-headers-6.6.74+rpt-common-rpi/include/linux/compiler-version.h -include /usr/src/linux-headers-6.6.74+rpt-common-rpi/include/linux/kconfig.h -include /usr/src/linux-headers-6.6.74+rpt-common-rpi/include/linux/compiler_types.h -D__KERNEL__ -mlittle-endian -DCC_USING_PATCHABLE_FUNCTION_ENTRY -DKASAN_SHADOW_SCALE_SHIFT= -fmacro-prefix-map=/usr/src/linux-headers-6.6.74+rpt-common-rpi/= -std=gnu11 -fshort-wchar -funsigned-char -fno-common -fno-PIE -fno-strict-aliasing -mgeneral-regs-only -DCONFIG_CC_HAS_K_CONSTRAINT=1 -Wno-psabi -mabi=lp64 -fno-asynchronous-unwind-tables -fno-unwind-tables -mbranch-protection=pac-ret -Wa,-march=armv8.5-a -DARM64_ASM_ARCH='"armv8.5-a"' -DKASAN_SHADOW_SCALE_SHIFT= -fno-delete-null-pointer-checks -O2 -fno-allow-store-data-races -fstack-protector-strong -fno-omit-frame-pointer -fno-optimize-sibling-calls -ftrivial-auto-var-init=zero -fno-stack-clash-protection -fpatchable-function-entry=4,2 -falign-functions=8 -fno-strict-overflow -fno-stack-check -fconserve-stack -Wall -Wundef -Werror=implicit-function-declaration -Werror=implicit-int -Werror=return-type -Werror=strict-prototypes -Wno-format-security -Wno-trigraphs -Wno-frame-address -Wno-address-of-packed-member -Wframe-larger-than=2048 -Wno-main -Wno-unused-but-set-variable -Wno-unused-const-variable -Wno-dangling-pointer -Wvla -Wno-pointer-sign -Wcast-function-type -Wno-array-bounds -Wno-alloc-size-larger-than -Wimplicit-fallthrough=5 -Werror=date-time -Werror=incompatible-pointer-types -Werror=designated-init -Wenum-conversion -Wno-unused-but-set-variable -Wno-unused-const-variable -Wno-restrict -Wno-packed-not-aligned -Wno-format-overflow -Wno-format-truncation -Wno-stringop-overflow -Wno-stringop-truncation -Wno-missing-field-initializers -Wno-type-limits -Wno-shift-negative-value -Wno-maybe-uninitialized -Wno-sign-compare -mstack-protector-guard=sysreg -mstack-protector-guard-reg=sp_el0 -mstack-protector-guard-offset=1432  -DMODULE  -DKBUILD_BASENAME='"kern_module"' -DKBUILD_MODNAME='"kern_module"' -D__KBUILD_MODNAME=kmod_kern_module -c -o /home/ameya/Kernel-Module/kern_module.o /home/ameya/Kernel-Module/kern_module.c  
 
-source_/home/ameya/Kernel-Module/module.mod.o := /home/ameya/Kernel-Module/module.mod.c
+source_/home/ameya/Kernel-Module/kern_module.o := /home/ameya/Kernel-Module/kern_module.c
 
-deps_/home/ameya/Kernel-Module/module.mod.o := \
-    $(wildcard include/config/UNWINDER_ORC) \
-    $(wildcard include/config/MODULE_UNLOAD) \
-    $(wildcard include/config/RETPOLINE) \
+deps_/home/ameya/Kernel-Module/kern_module.o := \
   /usr/src/linux-headers-6.6.74+rpt-common-rpi/include/linux/compiler-version.h \
     $(wildcard include/config/CC_VERSION_TEXT) \
   /usr/src/linux-headers-6.6.74+rpt-common-rpi/include/linux/kconfig.h \
@@ -24,6 +21,7 @@ deps_/home/ameya/Kernel-Module/module.mod.o := \
     $(wildcard include/config/CC_HAS_ASM_INLINE) \
   /usr/src/linux-headers-6.6.74+rpt-common-rpi/include/linux/compiler_attributes.h \
   /usr/src/linux-headers-6.6.74+rpt-common-rpi/include/linux/compiler-gcc.h \
+    $(wildcard include/config/RETPOLINE) \
     $(wildcard include/config/GCC_ASM_GOTO_OUTPUT_WORKAROUND) \
     $(wildcard include/config/ARCH_USE_BUILTIN_BSWAP) \
     $(wildcard include/config/SHADOW_CALL_STACK) \
@@ -32,35 +30,12 @@ deps_/home/ameya/Kernel-Module/module.mod.o := \
     $(wildcard include/config/ARM64_PTR_AUTH_KERNEL) \
     $(wildcard include/config/ARM64_PTR_AUTH) \
     $(wildcard include/config/BUILTIN_RETURN_ADDRESS_STRIPS_PAC) \
-  /usr/src/linux-headers-6.6.74+rpt-common-rpi/include/linux/module.h \
-    $(wildcard include/config/MODULES) \
-    $(wildcard include/config/SYSFS) \
-    $(wildcard include/config/MODULES_TREE_LOOKUP) \
-    $(wildcard include/config/LIVEPATCH) \
-    $(wildcard include/config/STACKTRACE_BUILD_ID) \
-    $(wildcard include/config/ARCH_USES_CFI_TRAPS) \
-    $(wildcard include/config/MODULE_SIG) \
-    $(wildcard include/config/GENERIC_BUG) \
-    $(wildcard include/config/KALLSYMS) \
-    $(wildcard include/config/SMP) \
-    $(wildcard include/config/TRACEPOINTS) \
-    $(wildcard include/config/TREE_SRCU) \
-    $(wildcard include/config/BPF_EVENTS) \
-    $(wildcard include/config/JUMP_LABEL) \
-    $(wildcard include/config/TRACING) \
-    $(wildcard include/config/EVENT_TRACING) \
-    $(wildcard include/config/FTRACE_MCOUNT_RECORD) \
-    $(wildcard include/config/KPROBES) \
-    $(wildcard include/config/HAVE_STATIC_CALL_INLINE) \
-    $(wildcard include/config/KUNIT) \
-    $(wildcard include/config/PRINTK_INDEX) \
-    $(wildcard include/config/CONSTRUCTORS) \
-    $(wildcard include/config/FUNCTION_ERROR_INJECTION) \
-    $(wildcard include/config/DYNAMIC_DEBUG_CORE) \
-  /usr/src/linux-headers-6.6.74+rpt-common-rpi/include/linux/list.h \
-    $(wildcard include/config/LIST_HARDENED) \
-    $(wildcard include/config/DEBUG_LIST) \
-  /usr/src/linux-headers-6.6.74+rpt-common-rpi/include/linux/container_of.h \
+  /usr/src/linux-headers-6.6.74+rpt-common-rpi/include/linux/init.h \
+    $(wildcard include/config/MEMORY_HOTPLUG) \
+    $(wildcard include/config/HAVE_ARCH_PREL32_RELOCATIONS) \
+    $(wildcard include/config/STRICT_KERNEL_RWX) \
+    $(wildcard include/config/STRICT_MODULE_RWX) \
+    $(wildcard include/config/LTO_CLANG) \
   /usr/src/linux-headers-6.6.74+rpt-common-rpi/include/linux/build_bug.h \
   /usr/src/linux-headers-6.6.74+rpt-common-rpi/include/linux/compiler.h \
     $(wildcard include/config/TRACE_BRANCH_PROFILING) \
@@ -97,6 +72,37 @@ deps_/home/ameya/Kernel-Module/module.mod.o := \
     $(wildcard include/config/KCSAN) \
     $(wildcard include/config/KCSAN_WEAK_MEMORY) \
     $(wildcard include/config/KCSAN_IGNORE_ATOMICS) \
+  /usr/src/linux-headers-6.6.74+rpt-common-rpi/include/linux/stringify.h \
+  /usr/src/linux-headers-6.6.74+rpt-common-rpi/include/linux/module.h \
+    $(wildcard include/config/MODULES) \
+    $(wildcard include/config/SYSFS) \
+    $(wildcard include/config/MODULES_TREE_LOOKUP) \
+    $(wildcard include/config/LIVEPATCH) \
+    $(wildcard include/config/STACKTRACE_BUILD_ID) \
+    $(wildcard include/config/ARCH_USES_CFI_TRAPS) \
+    $(wildcard include/config/MODULE_SIG) \
+    $(wildcard include/config/GENERIC_BUG) \
+    $(wildcard include/config/KALLSYMS) \
+    $(wildcard include/config/SMP) \
+    $(wildcard include/config/TRACEPOINTS) \
+    $(wildcard include/config/TREE_SRCU) \
+    $(wildcard include/config/BPF_EVENTS) \
+    $(wildcard include/config/JUMP_LABEL) \
+    $(wildcard include/config/TRACING) \
+    $(wildcard include/config/EVENT_TRACING) \
+    $(wildcard include/config/FTRACE_MCOUNT_RECORD) \
+    $(wildcard include/config/KPROBES) \
+    $(wildcard include/config/HAVE_STATIC_CALL_INLINE) \
+    $(wildcard include/config/KUNIT) \
+    $(wildcard include/config/PRINTK_INDEX) \
+    $(wildcard include/config/MODULE_UNLOAD) \
+    $(wildcard include/config/CONSTRUCTORS) \
+    $(wildcard include/config/FUNCTION_ERROR_INJECTION) \
+    $(wildcard include/config/DYNAMIC_DEBUG_CORE) \
+  /usr/src/linux-headers-6.6.74+rpt-common-rpi/include/linux/list.h \
+    $(wildcard include/config/LIST_HARDENED) \
+    $(wildcard include/config/DEBUG_LIST) \
+  /usr/src/linux-headers-6.6.74+rpt-common-rpi/include/linux/container_of.h \
   /usr/src/linux-headers-6.6.74+rpt-common-rpi/include/linux/poison.h \
     $(wildcard include/config/ILLEGAL_POINTER_VALUE) \
   /usr/src/linux-headers-6.6.74+rpt-common-rpi/include/linux/const.h \
@@ -109,7 +115,6 @@ deps_/home/ameya/Kernel-Module/module.mod.o := \
   arch/arm64/include/generated/asm/cpucaps.h \
   /usr/src/linux-headers-6.6.74+rpt-common-rpi/arch/arm64/include/asm/insn-def.h \
   /usr/src/linux-headers-6.6.74+rpt-common-rpi/arch/arm64/include/asm/brk-imm.h \
-  /usr/src/linux-headers-6.6.74+rpt-common-rpi/include/linux/stringify.h \
   /usr/src/linux-headers-6.6.74+rpt-common-rpi/include/asm-generic/barrier.h \
   /usr/src/linux-headers-6.6.74+rpt-common-rpi/include/linux/stat.h \
   /usr/src/linux-headers-6.6.74+rpt-common-rpi/arch/arm64/include/asm/stat.h \
@@ -153,12 +158,6 @@ deps_/home/ameya/Kernel-Module/module.mod.o := \
     $(wildcard include/config/ARCH_USE_SYM_ANNOTATIONS) \
   /usr/src/linux-headers-6.6.74+rpt-common-rpi/arch/arm64/include/asm/linkage.h \
   /usr/src/linux-headers-6.6.74+rpt-common-rpi/arch/arm64/include/asm/alternative.h \
-  /usr/src/linux-headers-6.6.74+rpt-common-rpi/include/linux/init.h \
-    $(wildcard include/config/MEMORY_HOTPLUG) \
-    $(wildcard include/config/HAVE_ARCH_PREL32_RELOCATIONS) \
-    $(wildcard include/config/STRICT_KERNEL_RWX) \
-    $(wildcard include/config/STRICT_MODULE_RWX) \
-    $(wildcard include/config/LTO_CLANG) \
   /usr/src/linux-headers-6.6.74+rpt-common-rpi/arch/arm64/include/asm/atomic_lse.h \
   /usr/src/linux-headers-6.6.74+rpt-common-rpi/include/linux/atomic/atomic-arch-fallback.h \
     $(wildcard include/config/GENERIC_ATOMIC64) \
@@ -933,17 +932,96 @@ deps_/home/ameya/Kernel-Module/module.mod.o := \
     $(wildcard include/config/HAVE_MOD_ARCH_SPECIFIC) \
     $(wildcard include/config/MODULES_USE_ELF_REL) \
     $(wildcard include/config/MODULES_USE_ELF_RELA) \
-  /usr/src/linux-headers-6.6.74+rpt-common-rpi/include/linux/build-salt.h \
-    $(wildcard include/config/BUILD_SALT) \
-  /usr/src/linux-headers-6.6.74+rpt-common-rpi/include/linux/elfnote.h \
-  /usr/src/linux-headers-6.6.74+rpt-common-rpi/include/linux/elfnote-lto.h \
-  /usr/src/linux-headers-6.6.74+rpt-common-rpi/include/linux/export-internal.h \
+  /usr/src/linux-headers-6.6.74+rpt-common-rpi/include/linux/proc_fs.h \
+    $(wildcard include/config/PROC_PID_ARCH_STATUS) \
+  /usr/src/linux-headers-6.6.74+rpt-common-rpi/include/linux/seq_file.h \
+  /usr/src/linux-headers-6.6.74+rpt-common-rpi/include/linux/string_helpers.h \
+  /usr/src/linux-headers-6.6.74+rpt-common-rpi/include/linux/ctype.h \
+  /usr/src/linux-headers-6.6.74+rpt-common-rpi/include/linux/string_choices.h \
+  /usr/src/linux-headers-6.6.74+rpt-common-rpi/include/linux/mm.h \
+    $(wildcard include/config/HAVE_ARCH_MMAP_RND_BITS) \
+    $(wildcard include/config/HAVE_ARCH_MMAP_RND_COMPAT_BITS) \
+    $(wildcard include/config/MEM_SOFT_DIRTY) \
+    $(wildcard include/config/ARCH_USES_HIGH_VMA_FLAGS) \
+    $(wildcard include/config/ARCH_HAS_PKEYS) \
+    $(wildcard include/config/PPC) \
+    $(wildcard include/config/X86_USER_SHADOW_STACK) \
+    $(wildcard include/config/X86) \
     $(wildcard include/config/PARISC) \
-  /usr/src/linux-headers-6.6.74+rpt-common-rpi/include/linux/vermagic.h \
-    $(wildcard include/config/PREEMPT_BUILD) \
-  include/generated/utsrelease.h \
-  /usr/src/linux-headers-6.6.74+rpt-common-rpi/arch/arm64/include/asm/vermagic.h \
+    $(wildcard include/config/SPARC64) \
+    $(wildcard include/config/HAVE_ARCH_USERFAULTFD_MINOR) \
+    $(wildcard include/config/SHMEM) \
+    $(wildcard include/config/MIGRATION) \
+    $(wildcard include/config/ARCH_HAS_PTE_SPECIAL) \
+    $(wildcard include/config/ARCH_HAS_PTE_DEVMAP) \
+    $(wildcard include/config/DEBUG_VM_RB) \
+    $(wildcard include/config/PAGE_POISONING) \
+    $(wildcard include/config/INIT_ON_ALLOC_DEFAULT_ON) \
+    $(wildcard include/config/INIT_ON_FREE_DEFAULT_ON) \
+    $(wildcard include/config/DEBUG_PAGEALLOC) \
+    $(wildcard include/config/ARCH_WANT_OPTIMIZE_DAX_VMEMMAP) \
+    $(wildcard include/config/HUGETLBFS) \
+    $(wildcard include/config/MAPPING_DIRTY_HELPERS) \
+  /usr/src/linux-headers-6.6.74+rpt-common-rpi/include/linux/mmap_lock.h \
+  /usr/src/linux-headers-6.6.74+rpt-common-rpi/include/linux/range.h \
+  /usr/src/linux-headers-6.6.74+rpt-common-rpi/include/linux/page_ext.h \
+  /usr/src/linux-headers-6.6.74+rpt-common-rpi/include/linux/stacktrace.h \
+    $(wildcard include/config/ARCH_STACKWALK) \
+    $(wildcard include/config/STACKTRACE) \
+    $(wildcard include/config/HAVE_RELIABLE_STACKTRACE) \
+  /usr/src/linux-headers-6.6.74+rpt-common-rpi/include/linux/stackdepot.h \
+    $(wildcard include/config/STACKDEPOT_ALWAYS_INIT) \
+    $(wildcard include/config/STACKDEPOT) \
+  /usr/src/linux-headers-6.6.74+rpt-common-rpi/include/linux/page_ref.h \
+    $(wildcard include/config/DEBUG_PAGE_REF) \
+  /usr/src/linux-headers-6.6.74+rpt-common-rpi/include/linux/pgtable.h \
+    $(wildcard include/config/HIGHPTE) \
+    $(wildcard include/config/ARCH_HAS_NONLEAF_PMD_YOUNG) \
+    $(wildcard include/config/GUP_GET_PXX_LOW_HIGH) \
+    $(wildcard include/config/ARCH_WANT_PMD_MKWRITE) \
+    $(wildcard include/config/HAVE_ARCH_TRANSPARENT_HUGEPAGE_PUD) \
+    $(wildcard include/config/HAVE_ARCH_SOFT_DIRTY) \
+    $(wildcard include/config/ARCH_ENABLE_THP_MIGRATION) \
+    $(wildcard include/config/HAVE_ARCH_HUGE_VMAP) \
+    $(wildcard include/config/X86_ESPFIX64) \
+  /usr/src/linux-headers-6.6.74+rpt-common-rpi/arch/arm64/include/asm/pgtable.h \
+    $(wildcard include/config/PAGE_TABLE_CHECK) \
+  /usr/src/linux-headers-6.6.74+rpt-common-rpi/arch/arm64/include/asm/proc-fns.h \
+  /usr/src/linux-headers-6.6.74+rpt-common-rpi/arch/arm64/include/asm/pgtable-prot.h \
+    $(wildcard include/config/ARM64_BTI_KERNEL) \
+  /usr/src/linux-headers-6.6.74+rpt-common-rpi/arch/arm64/include/asm/tlbflush.h \
+    $(wildcard include/config/ARM64_WORKAROUND_REPEAT_TLBI) \
+  /usr/src/linux-headers-6.6.74+rpt-common-rpi/include/linux/mmu_notifier.h \
+  /usr/src/linux-headers-6.6.74+rpt-common-rpi/include/linux/interval_tree.h \
+  /usr/src/linux-headers-6.6.74+rpt-common-rpi/arch/arm64/include/asm/fixmap.h \
+    $(wildcard include/config/ACPI_APEI_GHES) \
+    $(wildcard include/config/ARM_SDE_INTERFACE) \
+    $(wildcard include/config/UNMAP_KERNEL_AT_EL0) \
+    $(wildcard include/config/RELOCATABLE) \
+  /usr/src/linux-headers-6.6.74+rpt-common-rpi/include/asm-generic/fixmap.h \
+  /usr/src/linux-headers-6.6.74+rpt-common-rpi/include/linux/page_table_check.h \
+  /usr/src/linux-headers-6.6.74+rpt-common-rpi/include/asm-generic/pgtable_uffd.h \
+    $(wildcard include/config/HAVE_ARCH_USERFAULTFD_WP) \
+  /usr/src/linux-headers-6.6.74+rpt-common-rpi/include/linux/memremap.h \
+    $(wildcard include/config/DEVICE_PRIVATE) \
+    $(wildcard include/config/PCI_P2PDMA) \
+  /usr/src/linux-headers-6.6.74+rpt-common-rpi/include/linux/ioport.h \
+  /usr/src/linux-headers-6.6.74+rpt-common-rpi/include/linux/huge_mm.h \
+  /usr/src/linux-headers-6.6.74+rpt-common-rpi/include/linux/sched/coredump.h \
+    $(wildcard include/config/CORE_DUMP_DEFAULT_ELF_HEADERS) \
+  /usr/src/linux-headers-6.6.74+rpt-common-rpi/include/linux/vmstat.h \
+    $(wildcard include/config/VM_EVENT_COUNTERS) \
+    $(wildcard include/config/DEBUG_TLBFLUSH) \
+    $(wildcard include/config/PER_VMA_LOCK_STATS) \
+  /usr/src/linux-headers-6.6.74+rpt-common-rpi/include/linux/vm_event_item.h \
+    $(wildcard include/config/MEMORY_BALLOON) \
+    $(wildcard include/config/BALLOON_COMPACTION) \
+    $(wildcard include/config/ZSWAP) \
+  /usr/src/linux-headers-6.6.74+rpt-common-rpi/include/linux/vmalloc.h \
+    $(wildcard include/config/HAVE_ARCH_HUGE_VMALLOC) \
+  /usr/src/linux-headers-6.6.74+rpt-common-rpi/arch/arm64/include/asm/vmalloc.h \
+    $(wildcard include/config/PTDUMP_DEBUGFS) \
 
-/home/ameya/Kernel-Module/module.mod.o: $(deps_/home/ameya/Kernel-Module/module.mod.o)
+/home/ameya/Kernel-Module/kern_module.o: $(deps_/home/ameya/Kernel-Module/kern_module.o)
 
-$(deps_/home/ameya/Kernel-Module/module.mod.o):
+$(deps_/home/ameya/Kernel-Module/kern_module.o):

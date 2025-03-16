@@ -1,4 +1,6 @@
-obj-m := module.o
+obj-m := kern_module.o
+
+KBUILD_EXTRA_SYMBOLS := /home/ameya/Kernel-Module/Module.symvers
 
 KDIR := /lib/modules/$(shell uname -r)/build
 PWD := $(shell pwd)

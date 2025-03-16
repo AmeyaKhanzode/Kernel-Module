@@ -1,1 +1,1 @@
-savedcmd_/home/ameyak/Desktop/os/kernel_module/project/module.mod := printf '%s\n'   module.o | awk '!x[$$0]++ { print("/home/ameyak/Desktop/os/kernel_module/project/"$$0) }' > /home/ameyak/Desktop/os/kernel_module/project/module.mod
+savedcmd_/home/ameya/Kernel-Module/module.mod := printf '%s\n'   module.o | awk '!x[$$0]++ { print("/home/ameya/Kernel-Module/"$$0) }' > /home/ameya/Kernel-Module/module.mod
