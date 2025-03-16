@@ -14,6 +14,7 @@
 void read_mem_map(void);
 
 int main(void) {
+    pid_t pids[MAX_PROCESSES];
     printf("Parent PID: %d\n", getpid());
     
     for (int i = 0; i < MAX_PROCESSES; i++) {
@@ -24,27 +25,29 @@ int main(void) {
             return 1;
         }
         
-        if (pid == 0) {
-            printf("Child Process PID: %d, Parent PID: %d\n", 
-                   getpid(), getppid());
-                   
-            int *mem = malloc(sizeof(int) * 1024);
+        if (pid == 0) { // Child
+            printf("Child Process PID: %d, Parent PID: %d\n", getpid(), getppid());
+            size_t size = (1 << (i + 7)); // 128, 256, 512, 1024, 2048 KB
+            char *mem = malloc(size * 1024);
             if (!mem) {
                 perror("Memory allocation failed");
                 exit(1);
             }
-            
-            memset(mem, 0, sizeof(int) * 1024);
-            sleep(3);
+            memset(mem, 0, size * 1024);
+            sleep(10); // Keep alive for reading
             free(mem);
             exit(0);
         }
         
-        waitpid(pid, NULL, 0);
+        pids[i] = pid;
     }
     
-    sleep(2);
+    sleep(2); // Let children allocate memory
     read_mem_map();
+    
+    for (int i = 0; i < MAX_PROCESSES; i++) {
+        waitpid(pids[i], NULL, 0);
+    }
     
     return 0;
 }
@@ -58,7 +61,6 @@ void read_mem_map(void) {
         return;
     }
     
-    printf("Memory map from kernel module:\n");
     ssize_t bytes;
     while ((bytes = read(fd, buffer, BUFFER_SIZE - 1)) > 0) {
         buffer[bytes] = '\0';

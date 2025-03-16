@@ -51,8 +51,8 @@ __used __section("__versions") = {
 	{ 0x53b954a2, "up_read" },
 	{ 0xa9ecc4ee, "mmput" },
 	{ 0x44601e88, "__mmap_lock_do_trace_acquire_returned" },
-	{ 0x159e7d29, "__mmap_lock_do_trace_released" },
 	{ 0xaa3f0ae4, "__mmap_lock_do_trace_start_locking" },
+	{ 0x159e7d29, "__mmap_lock_do_trace_released" },
 	{ 0xf0fdf6cb, "__stack_chk_fail" },
 	{ 0x5f8ee070, "seq_read" },
 	{ 0x69fc8b8e, "seq_lseek" },
@@ -63,4 +63,4 @@ __used __section("__versions") = {
 MODULE_INFO(depends, "");
 
 
-MODULE_INFO(srcversion, "47CA1698FDDF4DACBEA1B4D");
+MODULE_INFO(srcversion, "8A8ABDB161B611A209A227A");
