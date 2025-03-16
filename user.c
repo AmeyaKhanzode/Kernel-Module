@@ -8,7 +8,7 @@
 #include <string.h>
 
 #define MAX_PROCESSES 5
-#define PROC_FILE "/proc/mem_map_module_ameya"
+#define PROC_FILE "/proc/mem_map"
 #define BUFFER_SIZE 2048
 
 void read_mem_map(void);
